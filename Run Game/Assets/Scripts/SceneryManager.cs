@@ -4,14 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneryManager : MonoBehaviour
+public class SceneryManager : Singleton<SceneryManager> 
 {
     [SerializeField] Image screenImage;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+
     //private void Update()
     //{
     //    if (Input.GetKeyDown(KeyCode.Space))
