@@ -7,20 +7,16 @@ public class RoadManager : MonoBehaviour
     [SerializeField] int createCount = 4;
 
     [SerializeField] float offset = 40.0f;
-    [SerializeField] float speed = 5.0f;
     [SerializeField] List<GameObject> roads;
 
-    // Start is called before the first frame update
     void Start()
     {
         roads.Capacity = 10;
 
         AddRoad();
 
+        StartCoroutine(SpeedManager.Instance.Increase());
     }
-
-    // Update is called once per frame
-
 
     void AddRoad()
     {
@@ -32,13 +28,13 @@ public class RoadManager : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < roads.Count; i++)
+        for(int i = 0; i < roads.Count; i++)
         {
-            roads[i].transform.Translate(Vector3.back * speed * Time.deltaTime);
+            roads[i].transform.Translate(Vector3.back * SpeedManager.Instance.Speed * Time.deltaTime);
         }
-
-
     }
+
+
 
     public void NewPosition()
     {
@@ -46,11 +42,10 @@ public class RoadManager : MonoBehaviour
 
         roads.Remove(newRoad);
 
-        float newZ = roads[roads.Count - 1].transform.position.z + offset;
+        float newZ = roads[roads.Count-1].transform.position.z + offset;
 
         newRoad.transform.position = new Vector3(0, 0, newZ);
 
         roads.Add(newRoad);
     }
-
 }

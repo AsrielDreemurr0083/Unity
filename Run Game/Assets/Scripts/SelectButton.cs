@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SelectButton : MonoBehaviour
@@ -22,9 +21,9 @@ public class SelectButton : MonoBehaviour
     {
         buttonText.fontSize = 75;
     }
+
     public void OnSelect()
     {
         buttonText.fontSize = 50;
     }
-
 }

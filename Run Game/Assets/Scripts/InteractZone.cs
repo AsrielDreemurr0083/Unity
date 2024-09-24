@@ -13,5 +13,4 @@ public class InteractZone : MonoBehaviour
             hitable.Activate();
         }
     }
-
 }

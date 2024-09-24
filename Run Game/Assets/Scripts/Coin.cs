@@ -11,26 +11,23 @@ public class Coin : MonoBehaviour, IColliderable
 
     public void Activate()
     {
-<<<<<<< HEAD
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
-        gameObject.GetComponent<BoxCollider>().enabled = false;
-    }
-=======
         particleSystem.Play();
 
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider>().enabled = false;
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
     }
 
->>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
     private void OnEnable()
     {
         rotationObject = GameObject.Find("Rotation GameObject");
 
-        speed = rotationObject.GetComponent<RotationManager>().Speed;
+        speed = rotationObject.GetComponent<RotationObject>().Speed;
 
         transform.localRotation = rotationObject.transform.localRotation;
     }
 
-    
+    void Update()
+    {
+        transform.Rotate(0, speed * Time.deltaTime, 0);
+    }
 }

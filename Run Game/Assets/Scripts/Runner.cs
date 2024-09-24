@@ -1,25 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Properties;
 using UnityEngine;
 
 public enum RoadLine
 {
-    Left = -1,
-    Middle,
-    Right
+    LEFT = -1,
+    MIDDLE,
+    RIGHT
 }
-
 
 public class Runner : MonoBehaviour
 {
     [SerializeField] RoadLine roadLine;
-    [SerializeField] float positionX = 2.0f;
-    [SerializeField] Rigidbody rigidbody;
+    [SerializeField] Rigidbody rigidBody;
+
     [SerializeField] float speed = 25.0f;
+    [SerializeField] float positionX = 2.0f;
+
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
@@ -29,21 +29,22 @@ public class Runner : MonoBehaviour
 
     void Start()
     {
-        roadLine = RoadLine.Middle;
+        roadLine = RoadLine.MIDDLE;
     }
 
     void OnKeyUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if(roadLine != RoadLine.Left) 
+            if (roadLine != RoadLine.LEFT)
             {
                 roadLine--;
             }
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+
+        if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if(roadLine != RoadLine.Right)
+            if(roadLine != RoadLine.RIGHT)
             {
                 roadLine++;
             }
@@ -54,13 +55,14 @@ public class Runner : MonoBehaviour
     {
         Move();
     }
+
     void Move()
     {
-        rigidbody.position = Vector3.Lerp
+        rigidBody.position = Vector3.Lerp
         (
-            rigidbody.position, 
-            new Vector3(positionX * (int)roadLine, 0, 0),
-            speed * Time.fixedDeltaTime
+             rigidBody.position,
+             new Vector3(positionX * (int)roadLine, 0, 0),
+             speed * Time.fixedDeltaTime
         );
     }
 
@@ -68,11 +70,7 @@ public class Runner : MonoBehaviour
     {
         IColliderable colliderable = other.GetComponent<IColliderable>();
 
-<<<<<<< HEAD
-        if (colliderable != null)
-=======
-        if(colliderable != null )
->>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
+        if(colliderable != null)
         {
             colliderable.Activate();
         }
