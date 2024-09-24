@@ -13,12 +13,11 @@ public class CoinManager : MonoBehaviour
     [SerializeField] int createCount = 16;    
     [SerializeField] float offsetZ = 2.5f;
 
-
+    
     void Awake()
     {
         coins.Capacity = 20;
         Create();
-
     }
 
     
@@ -40,7 +39,8 @@ public class CoinManager : MonoBehaviour
                 clone.name = clone.name.Substring(0, index);
             }
 
-            clone.SetActive(false);
+            clone.GetComponent<MeshRenderer>().enabled = false;
+            clone.GetComponent<BoxCollider>().enabled = false;
 
             coins.Add(clone);
         }
@@ -75,5 +75,24 @@ public class CoinManager : MonoBehaviour
     public void InitializePosition()
     {
         transform.localPosition = new Vector3(positionX * Random.Range(-1, 2), 0, 0);
+
+<<<<<<< HEAD
+        for(int i = 0; i < coins.Count; i++)
+        {
+            coins[i].GetComponent<MeshRenderer>().enabled = true;
+            coins[i].GetComponent<BoxCollider>().enabled = true;
+=======
+        for(int i = 0; i<coins.Count; i++)
+        {
+            if (coins[i].GetComponent<MeshRenderer>().enabled == false)
+            {
+                coins[i].GetComponent<MeshRenderer>().enabled = true;
+                coins[i].GetComponent<BoxCollider>().enabled = true;
+            }
+>>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
+        }
     }
+
+
+
 }

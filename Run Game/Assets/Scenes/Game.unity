@@ -280,7 +280,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1164570637}
+      - m_Target: {fileID: 1164570636}
         m_TargetAssemblyTypeName: CoinManager, Assembly-CSharp
         m_MethodName: InitializePosition
         m_Mode: 1
@@ -507,7 +507,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1604234030}
+      - m_Target: {fileID: 1604234029}
         m_TargetAssemblyTypeName: CoinManager, Assembly-CSharp
         m_MethodName: InitializePosition
         m_Mode: 1
@@ -1080,77 +1080,41 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1104296351 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-  m_PrefabInstance: {fileID: 1359877324}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1104296352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2796442619419504631, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 1359877324}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1104296353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104296351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 7727142391843643817, guid: 450b316116fa6954b9cdf83251272133, type: 3}
-  coins: []
-  positionX: 4
-  createCount: 16
-  offsetZ: 2.5
+<<<<<<< HEAD
 --- !u!114 &1104296354 stripped
+=======
+--- !u!114 &1104296353 stripped
+>>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -2274252239993922524, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 1359877324}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104296351}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1164570634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-  m_PrefabInstance: {fileID: 2041933115}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1164570635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2796442619419504631, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 2041933115}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1164570636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164570634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 7727142391843643817, guid: 450b316116fa6954b9cdf83251272133, type: 3}
-  coins: []
-  positionX: 4
-  createCount: 16
-  offsetZ: 2.5
+<<<<<<< HEAD
 --- !u!114 &1164570637 stripped
+=======
+--- !u!114 &1164570636 stripped
+>>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -2274252239993922524, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 2041933115}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164570634}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
@@ -1309,44 +1273,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1104296353}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
---- !u!1 &1451912974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-  m_PrefabInstance: {fileID: 7535683844052969585}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1451912975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2796442619419504631, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 7535683844052969585}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1451912976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451912974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 7727142391843643817, guid: 450b316116fa6954b9cdf83251272133, type: 3}
-  coins: []
-  positionX: 4
-  createCount: 16
-  offsetZ: 2.5
+<<<<<<< HEAD
 --- !u!114 &1451912977 stripped
+=======
+--- !u!114 &1451912976 stripped
+>>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -2274252239993922524, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 7535683844052969585}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451912974}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
@@ -1384,7 +1327,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1104296354}
+      - m_Target: {fileID: 1104296353}
         m_TargetAssemblyTypeName: CoinManager, Assembly-CSharp
         m_MethodName: InitializePosition
         m_Mode: 1
@@ -1468,39 +1411,21 @@ Transform:
   - {fileID: 823704449}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 12.5, y: 0, z: 0}
---- !u!1 &1604234027 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-  m_PrefabInstance: {fileID: 2137110173}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1604234028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2796442619419504631, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 2137110173}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1604234029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604234027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 7727142391843643817, guid: 450b316116fa6954b9cdf83251272133, type: 3}
-  coins: []
-  positionX: 4
-  createCount: 16
-  offsetZ: 2.5
+<<<<<<< HEAD
 --- !u!114 &1604234030 stripped
+=======
+--- !u!114 &1604234029 stripped
+>>>>>>> b0999e6c45e4fbd6c3d8a4021f6e30fa0884492a
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -2274252239993922524, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
   m_PrefabInstance: {fileID: 2137110173}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604234027}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99a7fe360a1eab41a891145dcdaab3f, type: 3}
@@ -1607,7 +1532,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1451912977}
+      - m_Target: {fileID: 1451912976}
         m_TargetAssemblyTypeName: CoinManager, Assembly-CSharp
         m_MethodName: InitializePosition
         m_Mode: 1
@@ -1678,10 +1603,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1164570636}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
 --- !u!1001 &2137110173
 PrefabInstance:
@@ -1742,10 +1664,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1604234029}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
 --- !u!1 &68135070210039565
 GameObject:
@@ -4547,7 +4466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796442619419504631, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 2796442619419504631, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4580,10 +4499,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 64415753873879250, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1451912976}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a9b4b75c8ecbb4ea2c8013fba42f53, type: 3}
 --- !u!4 &7564403523225317833
 Transform:
