@@ -15,6 +15,8 @@ public class Coin : MonoBehaviour, IColliderable
 
         gameObject.GetComponent<BoxCollider>().enabled = false;
         gameObject.GetComponent<MeshRenderer>().enabled = false;
+
+        
     }
 
     private void OnEnable()
