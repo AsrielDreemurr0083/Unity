@@ -34,8 +34,6 @@ public class RoadManager : MonoBehaviour
         }
     }
 
-
-
     public void NewPosition()
     {
         GameObject newRoad = roads[0];
