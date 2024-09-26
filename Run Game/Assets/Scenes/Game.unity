@@ -123,6 +123,101 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &96318471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96318473}
+  - component: {fileID: 96318472}
+  m_Layer: 0
+  m_Name: Obstacle Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &96318472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96318471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 224bc5fbd0f39324cb1e36ce0acc8443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5811414222012346658, guid: 91515e18ffbc0414295b5bfad005ee38, type: 3}
+  obstacles: []
+  createCount: 5
+--- !u!4 &96318473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96318471}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &299308043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299308045}
+  - component: {fileID: 299308044}
+  m_Layer: 0
+  m_Name: Speed Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &299308044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299308043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69829731ad95b7c4289faac24f2e6240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 1
+  speed: 25
+  limitSpeed: 75
+  incraseValue: 5
+--- !u!4 &299308045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299308043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &332996412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,10 +1312,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2e3f26660d06b46804a460e62aa141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   createCount: 4
-  speed: 30
   offset: 40
   roads: []
+  speedManager: {fileID: 299308044}
 --- !u!4 &1878068954
 Transform:
   m_ObjectHideFlags: 0
@@ -2021,6 +2117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170725f36813384438c61ca8b6e72c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   roadLine: -1
   rigidBody: {fileID: 0}
   speed: 25
@@ -4987,3 +5084,5 @@ SceneRoots:
   - {fileID: 1878068954}
   - {fileID: 2052909008}
   - {fileID: 1523803350}
+  - {fileID: 299308045}
+  - {fileID: 96318473}
